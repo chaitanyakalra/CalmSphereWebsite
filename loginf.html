@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="loginfcss1.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+    <!-- <script type="module" src="loginf.js"></script> -->
+    
+  </head>
+  <body>
+    <!-- <div class="video-container">
+      <video autoplay muted loop id="background-video">
+        <source src="img_video/Oswald_Intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video> -->
+
+      <div class="form">
+        <div class="form-content">
+          <div class="form-header">
+            <img src="./img_video/logo_white.jpg" alt="Logo" class="logo" />
+            <h2>Welcome to CalmSphere</h2>
+          </div>
+
+          <!-- Name -->
+          <div class="name">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" />
+          </div>
+
+          <!-- Age -->
+          <div class="age">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Your Age" />
+          </div>
+
+          <!-- Email -->
+          <div class="email">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Write your email"
+            />
+          </div>
+
+          <!-- Password -->
+          <div class="pass">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+
+          <!-- Sign Up button -->
+          <button id="submit-btn" onclick="signUp()">Sign Up</button>
+           <!-- Sign Up with Google button -->
+           <button id="google-signup-btn" onclick="signUpWithGoogle()">
+            <img src="./img_video/google-icon.png" alt="Google Icon" />
+            Sign Up with Google
+          </button>
+          <!-- Sign In option -->
+          <p>Already have an account?</p>
+          <span><a href="signIn.html">Sign In</a></span>
+        </div>
+      </div>
+    </div>
+    <script src="loginf.js"></script>
+    
+  </body>
+</html>
